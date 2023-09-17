@@ -54,9 +54,14 @@ body {
 }
 
 .hero-text {
+
+   
     position: absolute;
     top: 120px;
     left: 86px;
+}
+.hero-img img{
+    width: 100%;
 }
 
 .hero-text h1 {
@@ -312,4 +317,29 @@ button:hover {
 
 .footer-menu ul li a:hover {
     color: #0E8784;
+}
+
+@media screen and (max-width:768px) {
+    
+    .container{
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+.collections-info-extra{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+}
+
+.bit-cards{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+    
 }
