@@ -105,6 +105,9 @@ button:hover {
     transition: all 0.5s;
 
 }
+.picture-back img{
+    width: 100%;
+}
 
 .collections-info-extra {
     display: flex;
@@ -126,6 +129,9 @@ button:hover {
     width: 255px;
     height: 193px;
 
+}
+.box-inside{
+    /* display: flex; */
 }
 
 .picture-back {
@@ -160,12 +166,14 @@ button:hover {
 }
 
 .bit-map {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 550px;
     background-color: #2C343E;
     text-align: center;
     margin-top: 200px;
-    position: relative;
+    /* position: relative; */
 }
 
 .bit-map h3 {
@@ -187,15 +195,18 @@ button:hover {
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
-    width: 540px;
+    margin: 0 370px;
     margin-top: 32px;
-    margin-left: 370px;
+    /* margin-left: 370px; */
 }
 
 .bit-cards {
     display: flex;
     justify-content: space-around;
-    gap: 40px;
+    position: absolute;
+    top: 350px;
+    gap: 30px;
+    margin-left: 85px;
 }
 
 .bit-card {
@@ -203,8 +214,8 @@ button:hover {
     height: 382px;
     border-radius: 8px;
     background: #0E8784;
-    position: absolute;
-    bottom: -200px;
+    /* position: absolute; */
+    /* bottom: -200px; */
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -213,6 +224,7 @@ button:hover {
 
 .bit-card img {
     margin-top: 70px;
+    width: 72px;
 }
 
 .bit-card h3 {
@@ -240,7 +252,7 @@ button:hover {
 .about-work {
     padding-top: 350px;
     margin-left: 85px;
-    width: 1045px;
+    width: 100%;
 }
 
 .work-cards {
@@ -285,14 +297,10 @@ button:hover {
     line-height: 26px;
     margin-bottom: 64px;
 }
-.card-1{
-    position: absolute;
-    left: 30px;
+.work-cards_info{
+    width: 285px;
 }
-.card-2{
-    position: absolute;
-    right: 30px;
-}
+
 .footer-menu {
     display: flex;
     justify-content: space-between;
@@ -334,6 +342,19 @@ button:hover {
     .hero-text h1{
         font-size: 48px;
     }
+    .picture-back{
+        width: 100%;
+    }
+    .picture-back img{
+        width: 100%;
+    }
+    .box-1{
+        width: 573px;
+    }
+    .box-inside{
+        display: flex;
+    }
+
 
 .collections-info-extra{
     display: flex;
@@ -349,5 +370,76 @@ button:hover {
     text-align: center;
     justify-content: center;
 }
+.bitmap-main{
+    width: 100%;
+}
+.bit-map{
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+ align-items:center;
+   
+}
+.bit-map h3{
+    font-size: 32px;
+}
+.bit-map p{
+    margin: 0 72px;
+}
+    .bit-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .bit-card{
+        display: flex;
+        flex-direction: row;
+        height: 180px;
+        width: 573px;
+        margin-left: -30px;
+        justify-content: center;
+        align-items:center;
+    }
+    .card-inside{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 5px;
+    }
+
+    .about-work{
+      width: 100%;
+        padding-top: 454px;
+    }
+
+    .work-cards_info{
+    }
+
+    .work-cards_info h3{
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .work-cards_info p{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .footer-menu{
+        display:flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px 0 20px 0;    }
     
+
+}
+
+@media screen and (max-width: 375px) {
+    
+    .container{
+        width: 100%;
+        max-width: 327px;
+        margin: 0 auto;
+        margin-left: 30px;
+    }
+    .hero-text h1{
+        font-size: 40px;
+    }
 }
