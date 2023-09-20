@@ -30,6 +30,11 @@ body {
 
 .hero {
     position: relative;
+    background-image:url("../images/Bitmap.jpg");
+    background-size: cover;
+    max-width: 1280px;
+    height: 600px;
+    
 }
 
 .header-links ul {
@@ -319,12 +324,15 @@ button:hover {
     color: #0E8784;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:689px) {
     
     .container{
         width: 100%;
-        max-width: 768px;
+        max-width: 689px;
         margin: 0 auto;
+    }
+    .hero-text h1{
+        font-size: 48px;
     }
 
 .collections-info-extra{
